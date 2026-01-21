@@ -1,0 +1,46 @@
+{
+  "final_metrics": {
+    "overall_accuracy": 93.89,
+    "exact_match": 69.86,
+    "macro_f1": 0.95
+  },
+  "golden_dataset_metrics": {
+    "overall_accuracy": 97.0,
+    "exact_match": 83.3,
+    "macro_f1": 0.982
+  },
+  "per_attribute_accuracy": {
+    "Image Sharpness High": 99.5,
+    "Face Properly Framed and Centered": 96.7,
+    "Business or Professional Attire Visible": 95.1,
+    "Background Clean and Non-Distracting": 93.8,
+    "Lighting Even and Frontal": 90.3,
+    "Neutral Professional Facial Expression": 87.9
+  },
+  "training_parameters": {
+    "model": "Swin Transformer Tiny",
+    "pretrained": "ImageNet",
+    "parameters": "28M",
+    "input_size": "224x224",
+    "batch_size": 32,
+    "epochs": 10,
+    "optimizer": "AdamW",
+    "learning_rate": 5e-5,
+    "scheduler": "OneCycleLR",
+    "max_lr": 1e-4,
+    "loss": "BCEWithLogitsLoss",
+    "train_val_split": "80/20 (GroupShuffleSplit)"
+  },
+  "dataset": {
+    "source": "FFHQ (70,000 images)",
+    "generated_images": 6829,
+    "final_dataset_size": 9761,
+    "mislabeled_fixed": 2319,
+    "bad_framing_augmented": 2932
+  },
+  "improvement_stages": [
+    {"stage": "Baseline", "face_framing": 82, "overall_acc": 91.2, "exact_match": 57.0},
+    {"stage": "+Verification", "face_framing": 83, "overall_acc": 91.5, "exact_match": 59.2},
+    {"stage": "+Balancing", "face_framing": 97, "overall_acc": 93.9, "exact_match": 69.9}
+  ]
+}

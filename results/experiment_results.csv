@@ -1,0 +1,28 @@
+metric,value,description
+overall_accuracy,93.89,Overall accuracy across all attributes (%)
+exact_match,69.86,Percentage of images with all 6 attributes correct (%)
+macro_f1,0.95,Macro F1 score across all attributes
+training_images,9761,Total images in training dataset
+validation_split,20,Validation set percentage (%)
+epochs,10,Number of training epochs
+batch_size,32,Training batch size
+learning_rate,5e-5,AdamW optimizer learning rate
+max_learning_rate,1e-4,OneCycleLR maximum learning rate
+
+attribute,accuracy,f1_score
+Image Sharpness High,99.5,1.00
+Face Properly Framed and Centered,96.7,0.97
+Business or Professional Attire Visible,95.1,0.95
+Background Clean and Non-Distracting,93.8,0.95
+Lighting Even and Frontal,90.3,0.92
+Neutral Professional Facial Expression,87.9,0.90
+
+stage,face_framing_acc,overall_acc,exact_match
+Baseline,82,91.2,57.0
++Verification,83,91.5,59.2
++Balancing,97,93.9,69.9
+
+golden_dataset_metric,value
+overall_accuracy,97.0
+exact_match,83.3
+macro_f1,0.982

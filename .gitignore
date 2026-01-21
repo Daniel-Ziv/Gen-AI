@@ -1,0 +1,49 @@
+# Dataset (download from Google Drive - see README)
+output/*
+!output/DOWNLOAD_DATASET.txt
+
+# Old/duplicate folders (kept locally)
+56%f1/
+endgame/
+test_prompts_output/
+
+# Dev tool instructions
+CLAUDE.md
+
+# Old notebook version
+notebooks/training.ipynb
+
+# One-time dataset fix scripts (not part of main workflow)
+post_verify_labels.py
+regenerate_bad_labels.py
+
+# Test output
+test_output/
+test_prompts_output/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local

@@ -1,0 +1,14 @@
+================================================================================
+                        ProPortrait-Gen Dataset
+================================================================================
+
+The generated dataset is not included in this repository due to size.
+
+Download the dataset from Google Drive:
+https://drive.google.com/drive/folders/169_Y7wz-S8kiTq8QCl7sdcBnA-Y-M-5k?usp=sharing
+
+After downloading, extract the contents to this folder:
+- images/     → Generated portrait images (9,761 JPEGs, 512x512)
+- metadata/   → JSON metadata files (one per image)
+
+================================================================================
